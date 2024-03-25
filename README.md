@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,17 +21,13 @@
 l
     const hourAngle = (hour * 30) + (minute / 2);
     const minuteAngle = (minute * 6) + (second / 10);
-    const secondAngle = second * 6;
-
-    const hourHand = document.getElementById('hour-hand');
+    const secondAngle = second * 6; const hourHand = document.getElementById('hour-hand');
     const minuteHand = document.getElementById('minute-hand');
     const secondHand = document.getElementById('second-hand');
-
-    hourHand.style.transform = `rotate(${hourAngle}deg)`;
+ hourHand.style.transform = `rotate(${hourAngle}deg)`;
     minuteHand.style.transform = `rotate(${minuteAngle}deg)`;
     secondHand.style.transform = `rotate(${secondAngle}deg)`;
 }
-
 updateClock();
 setInterval(updateClock, 1000);
 </script>
